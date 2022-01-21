@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Install and update Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+BREWPATH=$(which brew);
+[ ! $BREWPATH ] && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
 
 # Install Git if it's not already installed
@@ -12,10 +13,18 @@ GITPATH=$(which git);
 NODEPATH=$(which node);
 [ ! $NODEPATH ] && brew install node;
 
-mkdir ~/lunch-and-learn
-mkdir ~/lunch-and-learn/learning-web
-mkdir ~/lunch-and-learn/learning-web/1-basic-html-css
+# Creating the working folders
+LNLFOLDER=~/lunch-and-learn;
+LEARNWEBFOLDER=$LNLFOLDER/learning-web;
+BASICFOLDER=$LEARNWEBFOLDER/1-basic-html-css;
 
-git clone https://github.com/palo-it-hk/learning-web-1-basic-html-css.git ~/lunch-and-learn/learning-web/1-basic-html-css
+[ ! -d $LNLFOLDER ] && mkdir $LNLFOLDER
+[ ! -d $LEARNWEBFOLDER ] && mkdir $LEARNWEBFOLDER
 
-exit;
+# Clone the git repository
+git clone https://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@github.com/antoinealej/test-dasdf.git $BASICFOLDER
+cd $BASICFOLDER;
+git config user.name "antoinealejautomate";
+
+# Open VSCode with the project
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/lunch-and-learn/learning-web/1-basic-html-css
