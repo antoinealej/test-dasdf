@@ -4,32 +4,20 @@
 ### Run the install script
 To run the script, follow the [Pre Lunch & Learn Install](docs/PreInstall.md).
 
-## Tools
 ### Visual Studio Code
 Got to [code.visualstudio.com](https://code.visualstudio.com/download) and download the latest version for your OS.
-
 Once VSCode is installed you can launch it.
 
-### Terminal tools
-Refer to [install.sh](/docs/install)
+## Setting up the project
+```
+git pull ...
+```
+Open VSCode then `File/Open` or `CMD+O` and select the folder you just cloned.
 
-## Creation of the project
-1) Create your Folder:
-    - Open VSCode then click on `File/Open Folder`.
-    - Go the the place you want to create your project.
-    - Click on `New Folder`.
-    - Give a name to your folder (eg: `Learning Web 1`).
-    - Click on Open.
-2) Create `index.html` file:
-    - Right click in the left panel.
-    - Click on `New File`.
-    - Name it `index.html`.
-    - Tap on the `return` key on your keyboard.
-3) Create `styles.css` file:
-    - Right click in the left panel.
-    - Click on `New File`.
-    - Name it `styles.css`.
-    - Tap on the `return` key on your keyboard.
+Create your personal Folder:
+  - Right click on `content` in the left panel.
+  - Click on `New Folder`.
+  - Input a unique name that noone else will use (eg: `Antoine Alejandro` or whatever you think will be unique).
 
 ## HTML History
 HTML stands for HyperText Markup Language, it's a very evolving markup language.
