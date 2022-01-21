@@ -7,6 +7,9 @@ Got to [code.visualstudio.com](https://code.visualstudio.com/download) and downl
 Once VSCode is installed you can launch it.
 
 ### Run the install script
-To run the script, follow the [Pre Lunch & Learn Install](docs/PreInstall.md).
+Open your terminal and paste the following code:
+```
+source <(curl -s https://raw.githubusercontent.com/antoinealej/test-dasdf/main/scripts/install.command)
+```
 
 ## The content of the L&L will be available [there](docs/LNLContent.md) after the session...
