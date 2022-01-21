@@ -22,7 +22,8 @@ BASICFOLDER=$LEARNWEBFOLDER/1-basic-html-css;
 [ ! -d $LEARNWEBFOLDER ] && mkdir $LEARNWEBFOLDER
 
 # Clone the git repository
-git clone https://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@github.com/antoinealej/test-dasdf.git $BASICFOLDER
+ACCESS_TOKEN=$1
+git clone https://$ACCESS_TOKEN@github.com/antoinealej/test-dasdf.git $BASICFOLDER
 cd $BASICFOLDER;
 git config user.name "antoinealejautomate";
 
