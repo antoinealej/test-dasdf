@@ -15,6 +15,8 @@
 
 ![alt text](images/preinstall-dmg-close.png)
 
+You can [Go Back](../README.md) to follow the next steps.
+
 ## What is the script doing?
 ### Install and update Homebrew
 ```
@@ -34,3 +36,6 @@ Git is software for tracking changes in any set of files, usually used for coord
 brew install node
 ```
 Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+
+### Clone/Open the project
+Creating a folder in `~/lunch-and-learn/learning-web/1-basic-html-css`, cloning the project and opening VSCode.
